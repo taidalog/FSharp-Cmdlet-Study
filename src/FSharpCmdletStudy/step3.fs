@@ -9,7 +9,6 @@ type Person(familyName : string, firstName : string, language : string) =
 
 
 open System
-open System.IO
 open System.Management.Automation
 
 [<Cmdlet(VerbsCommon.New, "Person2")>]

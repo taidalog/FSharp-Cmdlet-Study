@@ -1,7 +1,6 @@
 namespace FSharpCmdletStudy
 
 open System
-open System.IO
 open System.Management.Automation
 
 [<Cmdlet(VerbsCommon.New, "Person")>]
