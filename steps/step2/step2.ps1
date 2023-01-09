@@ -30,8 +30,8 @@ type NewPersonCommand () =
 # Add `<Compile Include="step2.fs" />` to `<ItemGroup>` in `.fsproj` file MANUALLY.
 # Then `<ItemGroup>` in `.fsproj` will be as below:
 #  <ItemGroup>
-#  <Compile Include="Library.fs" />
-#  <Compile Include="step2.fs" />
+#    <Compile Include="Library.fs" />
+#    <Compile Include="step2.fs" />
 #  </ItemGroup>
 
 # After editing, you can go on.
