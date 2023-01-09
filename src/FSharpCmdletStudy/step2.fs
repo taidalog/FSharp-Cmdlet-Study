@@ -9,7 +9,7 @@ type NewPersonCommand () =
     inherit PSCmdlet ()
 
     [<Parameter(Mandatory = true, Position = 0)>]
-    member val FamiryName : string = "" with get, set
+    member val FamilyName : string = "" with get, set
     
     [<Parameter(Mandatory = true, Position = 1)>]
     member val FirstName : string = "" with get, set
@@ -18,6 +18,6 @@ type NewPersonCommand () =
     member val Language : string = "" with get, set
 
     override this.EndProcessing () =
-        sprintf "%s %s uses %s." this.FamiryName this.FirstName this.Language 
+        sprintf "%s %s uses %s." this.FamilyName this.FirstName this.Language 
         |> this.WriteObject
         base.EndProcessing ()

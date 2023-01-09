@@ -17,7 +17,7 @@ type NewPerson2Command () =
     inherit PSCmdlet ()
 
     [<Parameter(Mandatory = true, Position = 0)>]
-    member val FamiryName : string = "" with get, set
+    member val FamilyName : string = "" with get, set
     
     [<Parameter(Mandatory = true, Position = 1)>]
     member val FirstName : string = "" with get, set
@@ -26,6 +26,6 @@ type NewPerson2Command () =
     member val Language : string = "" with get, set
 
     override this.EndProcessing () =
-        new Person(this.FamiryName, this.FirstName, this.Language) 
+        new Person(this.FamilyName, this.FirstName, this.Language) 
         |> this.WriteObject
         base.EndProcessing ()
