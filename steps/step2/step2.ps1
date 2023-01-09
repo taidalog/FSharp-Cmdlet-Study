@@ -25,13 +25,13 @@ type NewPersonCommand () =
         sprintf "%s %s uses %s." this.FamiryName this.FirstName this.Language 
         |> this.WriteObject
         base.EndProcessing ()
-"@ | Out-File ./src/$slnName/Step2.fs -Encoding utf8
+"@ | Out-File ./src/$slnName/step2.fs -Encoding utf8
 
-# Add `<Compile Include="Step2.fs" />` to `<ItemGroup>` in `.fsproj` file MANUALLY.
+# Add `<Compile Include="step2.fs" />` to `<ItemGroup>` in `.fsproj` file MANUALLY.
 # Then `<ItemGroup>` in `.fsproj` will be as below:
 #  <ItemGroup>
 #  <Compile Include="Library.fs" />
-#  <Compile Include="Step2.fs" />
+#  <Compile Include="step2.fs" />
 #  </ItemGroup>
 
 # After editing, you can go on.
